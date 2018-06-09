@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-bottom: solid 5px rgb(0, 173, 255);
+    padding: 20px;
+}
+.main {
+    overflow: hidden;
+    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.gallow {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/gallows.png);
+    overflow: hidden;
+    position: relative;
+    border: solid 5px #c7d2f5;
+    float: left;
+    padding:10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width:33%;
+    height: 700px;
+    
+    background-color: white; 
+}
+.container {
+    overflow: hidden;
+    position: relative;
+    border: solid 5px #c7d2f5;
+    float: right;
+    padding:10px;
+    /* margin-bottom: 100px;
+    margin-top: 10px; */
+    /* margin-bottom: auto; */
+    margin-top: 40px;
+    width: 66%;
+    height: 700px;
+    
+    background-color: #070101d7; 
+}
+footer {
+    text-align: center;
+
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    color: white;
+    background-color: black;
+    border-bottom: solid 5px rgb(0, 173, 255);
+    padding: 20px;
+}
+#blankword {
+    text-align: center;
+    width: 97%;
+    position: absolute;
+    padding: 50px 10px;
+    font-size: 50px;
+    margin-top: 150px;
+    
+    
+}
+#instructions {
+    padding: 10px;
+    right: 10px;
+    position: absolute;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 20px; */
+    width: 60%;
+    /* float: left; */
+}
+#card {
+    margin-top: 60px;
+    font-size: 50px;
+    text-align: center;
+    width: 50px;
+    height: 75px;
+    border: 5px solid black;
+    border-radius: 20%;
+    background-color: white;
+
+    
+    display: inline-block;
+}
+#past-guesses {
+    
+    font-size: 20px;
+}
+.guess-left {
+    bottom: 30px;
+    position: absolute;
+    background-color: rgba(223, 219, 219, 0.845);
+    text-align: center;
+    /* margin-top: -60px;
+    margin-left: 700px;
+    margin-bottom: 100px; */
+}
+p {
+    margin: 20px;
+    font-size: 30px;
+}
+.sofar {
+    
+    text-align: center;
+}
+body {
+    background-color: aqua;
+}
+.scoreboard {
+    top:0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    font-size: 34px;    
+    margin-top: 10px;
+    width: 33%;
+    /* height: 100px; */
+}
+#pokertable {
+    bottom: 10px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 97%;
+    height: 350px;
+    /* margin-top:; */
+    padding: 10px 10px;
+    text-align: center;
+    border: 30px solid black;
+    border-radius: 45%;
+    background: rgb(9, 78, 9);
+}
