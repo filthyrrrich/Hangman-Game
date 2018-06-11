@@ -1,5 +1,8 @@
 # Hangman-Game
 
+Conclusion:
+
+This assignment was defenitely much easier for me to wrap my head around having already laid the ground work by doing the Psychic-Game. Hangman proved to be much more challenging overall, but it felt like I had a better foundation to start from instead of staring at a black screen not knowing where to begin. I still hit plenty of road blocks on this assignment and probably put close to 25hrs+ on it. Unfortunately, due to my work schedule, I was unable to do everything I wanted(media queries, having multiple game levels, better images, multiple difficulty settings, etc) but I am pleased with how both games came out and how much I learned in the process. Fist or 5 javascript Im feeling above a 3 finally!
 
 
 Psuedo-code:
@@ -7,6 +10,10 @@ Psuedo-code:
 Basic HTML/CSS with correct divs.
 
 Array with words to choose.
+
+Array with letters.
+
+Array for images.
 
 Function to reset game
 

@@ -7,47 +7,31 @@
     </head>
     <body>
         <header>
-            <h1>HangJACK</h1> 
+            <h1><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALISURBVGhD7ZjPi9NAFMcrHkTBkygKHrwoHgTxF3qRlZ0kjfgDxC2bSVq2m5l09eDBv2LRmx5E716EFT0p/hO7qLieRMQfFH/jD1wRur7ZvK4leSxNmkxTyQe+0GbevPed6SSZTqWkpKTk/4U5/inTDU7i19HCrF/YZnDx2uTilT0xvRUvjwZVL9hhuvIxaFkJBrIwVpvajs3FxuKtvYYrXnbNr4rLFwaf2Y1hxcT05DnDlZ9i5rvi8iMsqTMYXhyOTVzeCAZvxAzT6hhcXrPtSxuw+3Ax6/4+MPSUMLqm1H2hlhumGQ6Mi4uwLH5RBvsRDPyH5fk+ptPHWd/fbLpijjKVRnDT3z7dam3C9PnCJuUemPVnlJEBNV+dnNmFZfIBfvIqzPxXonhGEh8MHoxhuWxhPDgPj8jfdOHsBDf3T+YIG8tmg+nIcR3mu1KDMJ3gKJYfjJVtgXoBEYVyVjuTPRS8Oe8TyTVJ3EEb6WBecIROrE0dqz69H+0kB2bgOpFUq9S2A+0kBxIsRhPqltqmoJ3kQOdvVFKdUh7QTnJgCX2nkurUQAOAPcpzKqlmLaKd5MAL5RaRUKvgBXoT7SSHeeIElVSnqp48jnbSAWvwEZVYh2AFPEAb6bE9uRN+xvdUgZz1VtVGG4NhOP5hlTBSYG1x8a77GWZy9XNf4uKN5cpDWD4bcFN3Fwp0YgV7pE4lmBNMwRNs6d81sTTuyqZq640lBLnFXK5nSDCQg2DoKszqQri0xB+c4YcWl546obAcYUaMLTM3MFSb4foNFRv2gb7h8pyHe+0Kc/wDWGa4UHsoMJh+T6OTlTMiLr/EByA+qzYMKy5gthk136MmhhWTWq22Hp4gTwjjoaBNxWB48QCTImY6oqEcZPUDazS2gMF21DChtorFboVhXZL/zvDovKf6hF0LAJiajZrsQ7PYvaSkpGRkqVT+AuXizLVSkdOYAAAAAElFTkSuQmCC"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPnSURBVFhH7VhJTFNRFK1DonFh4rAzLnSnJpo4xQVJ0/72twSIDIFAC0gig4YSSDAFEggS5hBg4UYXblwa1y4cF0inoIhDcQCDIgFlbn9blOF7rnlYwUfpAAUTTnKStnn33vPufcN9VWxhC5sZXUrlQZtGY3LodFa7VjtuFYQ5fJ/B909WUbxp12jOsqErolMQzlm12ltkQ7bkg3w59HqLTasttAvCATY0eMjV1dthXGETRbczM9MzUlYmuxoaZE9rq+xqbJTHqqrk/vz8eQT1IdBji1p9iJn+gUMUD9v1+iegr7+gYJ5syHbRB/kk34ghIZaZYjLTwOiKj9+DwI96UlKkqbo62dfeviK9bW1yX17eLAK4kJ0LzIWCPiNLLgib9UIQz3aRFKMnOVmy63QPKDZzwQfNAjN+6MzK8q3m+G9SNqwajcemVh+3q1QnUFLPSHk5dyyPFMtpNPpIpKxQbGNy/gWlGrNxU2Z4jgLxs8k0j7J+QJCPA0VFC7wxgUgxKZMo+TUmZyksorgfZXGvVtYViQCv09IkIn3mjlmFk4hNS6MjJmYfk+UH7aheo1HiGQZLmlzYE2TsNRgkbLorTJYftO1pLfGMoskRs1nGPnjGZPmB9TM2jaOEZxRNTtfXy1jHo0yWHzgaZumM4hlFk6SBtDBZfmBxTrubm7lG0aQEDbRZmSw/sAbtm2ENjldXU4n7mCw/cP7kOzMyPDyjaHKgsHAOAm8wWX7Y9Pq9OGrctEh5htHii4SEaYtGo2SylgK1v+40GDYsi6OVlVTegRWvu6dK5W6bTje8IWsRt8/LpCRqOrKYHD5w4aswC5+7qYnvaJ04VFq6gH3wJqi2yy6K9a/S0tzh3qmh8vfhLIo+m0p1hkkIDJoFesIO9HM/eQ7XktTFdCcmelG1GhY+OFB3g139nVLPc7xW7MvNnYG4zrupqTtY6OBhVatPIvUStes855FysLh4FuKG6O3DQoYOrAs1nLgnamq4QcIlTooFPLym0IkfY6HCh00QLuIq9E7W1nKDhUo677BjpzD5UyxE5MDz8BIy6Ym0If1WUUE71oWm9DxzvXbAGXnZERsrUWvOC74ah81mOusklDWGuVx7WATBSJkMdU0OlpTM41SYQOZOM1frB2QgGW25RK0RT8xy4ij5gbJ+hcAjzMX6AwtcpHJR2XiiiFJLi/w2PV3Cc6I7rL84IgVdTRA5OWAyzS0XR+v0eVycBx3Snft6/S5mEn04BOEoSvflfU7OzOKDn24fCPNaBeEqG7axoIc2XVd4tHveZWfTXxhDwfzzFVWgl9wJYbfRT96j7pz9vIUt/OdQKH4B6dpwugFVXbMAAAAASUVORK5CYII="><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMbSURBVGhD7VdNb9NAEHUEF858CQlxQ+KIOHGLROw0Z0jAdhopZDcRV8QPANSiUm7wM3IBqb0j8QP4KPRaCamiPYHSUOBC4E08sZLNJNguqt3KT3rSenfe5Hl3szu2cuTIkeN4wVm8d8721JLj67e2p78Tg7ZaKnqdMxyWTTi+qoF9GP4jES+zV/Latzg8W7BdfRsmB6ZpgQPbVzdZlg0E20bvCWZFIrZXqd49y/L0AVPLpskIfMzy9IEZfS8YnEv8qd+xPH3E2T4jkobl6QOGdkyDEbjD8vSB7bAmGJxL0rA8fTh1XZVMziU0LE8fxeLDk5jRLdGoQIolDcuzgbKv7khmJVIsyw4Hlbq+iNvzmePpTZQKPxxPfYaRbtlVDoYLQZRVwMy+Mc2apBiKDSSk0Qvo7wY5KbfeRN/qQr19gWMOBttvNYaJBTNE/NjHkqsqFFv2Oldg4KcUNyTGKIZiSYNJ+STGDYnfdNUixSYGJZCTT5NOFV6pB9I4kcbsRucS2uvm2AwOUGN5bCceaAlhal9IOpNYjZ7tttpoSwbXS77u0AUmjM2h6t9w1Xm2FR0QPpETRqCnXsHo9ugZM79NfRMx8bjMtqIDog9GkljE6n2R2kkIffy6CTNIX1JiwsMmbTu2FR3H4QVil8jjxLJvgb+J5Ri3tMREWwjCJB8pI3Ztr3l59Mzt7ug5AeP/ienooiNMSDaTWLUeZkuTHsfwtbGxq9Rn+7pN22Gs/58cxuOTlfSxQZcIkkT5UKdlHl5kLLUcr+2GY/jg524r7kV24Lqp7On6vJXADIWlxDhw7j8K49Dm7hARSol+4lvYRHAr61Uyi5neDwqvqWJuAqh7Xodm0OZuExPFHOfegPmn/62YS4Lr1funMLu/Ri9Aberj4eyDViacfWbJb9s8nH1gC7wwXwBb5TkPZxu0VbDnv02/gPp6JLYRzDZN82Nsclg2UavVTgSniGiejtMNiuHw7AEm1ZRpg+V6q8Xh2UKp0TgNg7umYYG7FMuyzKCA7RH5iws10UvSBNIMAKZWTJMRuMLyHDly5DiysKy/rkghIok9Q+8AAAAASUVORK5CYII="><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKNSURBVFhH5ZjLS1RhGMZPBC3atGrXsmUtazvpuczQCIIwJoIrKQQXbiZcCIJQogt1k39BrVr2DwSBc2amIYg0WpRQIERIFM4lirT3J+8JqQ/ncq7gAw98833v+zzvnNt3sc4UfMe5C/VntrBl2zdqnteGtLU7G3hRKFz2XXf/8/z8IaRNnw6ni6el0nm5avXdmZmfnY2NI0ibPsY0LD1IIY/ejI832+vrx8VB2vQxpmHpwPe8O41isdlcXf1bXED6GCNGw5PFluteq3pe6+vS0n/FBWSMGGI1LRk0HOdSLZ/f2yuXD02FnSQxxJKj6fHiyLLOyVV5/n56+oepIBOJJYdclYkPVdd98HpsrNleWzMWYyKx5JCrMvHAHxq6XSsUWgcrK8ZCTiM55KKhctGikstdrbnuwf7iorGAXkguGmipbDRojIxclG/ah09zc79Nxv0QDbTQVPnwkAf82bupqY7JcBCihabKh4MIlV+NjjZbfbwU3YgWmmirzWCoOE5OvmGt78vLRqMwRBNtPNSuP1RzuSvyD799WVgwGkRBtPHAS217w3apdKHuedsfZ2d/mYSjJB544an23SGX/vHbyclW58QKJTaKB154qn131PP5J0kXiKfad4fe4p0Eb/FOX7cYZPolCeDb9q24PzN4qN1gkBXI/dg+1KKtNuEgc2fkUx2aKh8eTOzyIO9GtVhAK9LFAsj0citA1baLYResaKhcPJBn5+GgS35yVSY+sPGRK9H3pomcRDZNINPbzgAV274us0BPG3diNS1Z+K470fXoQ2I0PB3Ig795yuHRpoalB47Y5Da+/Pf4jb5MHL+BTB9gBqgMD9+UW3p8BExbu7MFmSXuQf15FmBZfwDY1uNHcOIBugAAAABJRU5ErkJggg==">HANG-JACK<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKNSURBVFhH5ZjLS1RhGMZPBC3atGrXsmUtazvpuczQCIIwJoIrKQQXbiZcCIJQogt1k39BrVr2DwSBc2amIYg0WpRQIERIFM4lirT3J+8JqQ/ncq7gAw98833v+zzvnNt3sc4UfMe5C/VntrBl2zdqnteGtLU7G3hRKFz2XXf/8/z8IaRNnw6ni6el0nm5avXdmZmfnY2NI0ibPsY0LD1IIY/ejI832+vrx8VB2vQxpmHpwPe8O41isdlcXf1bXED6GCNGw5PFluteq3pe6+vS0n/FBWSMGGI1LRk0HOdSLZ/f2yuXD02FnSQxxJKj6fHiyLLOyVV5/n56+oepIBOJJYdclYkPVdd98HpsrNleWzMWYyKx5JCrMvHAHxq6XSsUWgcrK8ZCTiM55KKhctGikstdrbnuwf7iorGAXkguGmipbDRojIxclG/ah09zc79Nxv0QDbTQVPnwkAf82bupqY7JcBCihabKh4MIlV+NjjZbfbwU3YgWmmirzWCoOE5OvmGt78vLRqMwRBNtPNSuP1RzuSvyD799WVgwGkRBtPHAS217w3apdKHuedsfZ2d/mYSjJB544an23SGX/vHbyclW58QKJTaKB154qn131PP5J0kXiKfad4fe4p0Eb/FOX7cYZPolCeDb9q24PzN4qN1gkBXI/dg+1KKtNuEgc2fkUx2aKh8eTOzyIO9GtVhAK9LFAsj0citA1baLYResaKhcPJBn5+GgS35yVSY+sPGRK9H3pomcRDZNINPbzgAV274us0BPG3diNS1Z+K470fXoQ2I0PB3Ig795yuHRpoalB47Y5Da+/Pf4jb5MHL+BTB9gBqgMD9+UW3p8BExbu7MFmSXuQf15FmBZfwDY1uNHcOIBugAAAABJRU5ErkJggg=="><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMbSURBVGhD7VdNb9NAEHUEF858CQlxQ+KIOHGLROw0Z0jAdhopZDcRV8QPANSiUm7wM3IBqb0j8QP4KPRaCamiPYHSUOBC4E08sZLNJNguqt3KT3rSenfe5Hl3szu2cuTIkeN4wVm8d8721JLj67e2p78Tg7ZaKnqdMxyWTTi+qoF9GP4jES+zV/Latzg8W7BdfRsmB6ZpgQPbVzdZlg0E20bvCWZFIrZXqd49y/L0AVPLpskIfMzy9IEZfS8YnEv8qd+xPH3E2T4jkobl6QOGdkyDEbjD8vSB7bAmGJxL0rA8fTh1XZVMziU0LE8fxeLDk5jRLdGoQIolDcuzgbKv7khmJVIsyw4Hlbq+iNvzmePpTZQKPxxPfYaRbtlVDoYLQZRVwMy+Mc2apBiKDSSk0Qvo7wY5KbfeRN/qQr19gWMOBttvNYaJBTNE/NjHkqsqFFv2Oldg4KcUNyTGKIZiSYNJ+STGDYnfdNUixSYGJZCTT5NOFV6pB9I4kcbsRucS2uvm2AwOUGN5bCceaAlhal9IOpNYjZ7tttpoSwbXS77u0AUmjM2h6t9w1Xm2FR0QPpETRqCnXsHo9ugZM79NfRMx8bjMtqIDog9GkljE6n2R2kkIffy6CTNIX1JiwsMmbTu2FR3H4QVil8jjxLJvgb+J5Ri3tMREWwjCJB8pI3Ztr3l59Mzt7ug5AeP/ienooiNMSDaTWLUeZkuTHsfwtbGxq9Rn+7pN22Gs/58cxuOTlfSxQZcIkkT5UKdlHl5kLLUcr+2GY/jg524r7kV24Lqp7On6vJXADIWlxDhw7j8K49Dm7hARSol+4lvYRHAr61Uyi5neDwqvqWJuAqh7Xodm0OZuExPFHOfegPmn/62YS4Lr1funMLu/Ri9Aberj4eyDViacfWbJb9s8nH1gC7wwXwBb5TkPZxu0VbDnv02/gPp6JLYRzDZN82Nsclg2UavVTgSniGiejtMNiuHw7AEm1ZRpg+V6q8Xh2UKp0TgNg7umYYG7FMuyzKCA7RH5iws10UvSBNIMAKZWTJMRuMLyHDly5DiysKy/rkghIok9Q+8AAAAASUVORK5CYII="><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPnSURBVFhH7VhJTFNRFK1DonFh4rAzLnSnJpo4xQVJ0/72twSIDIFAC0gig4YSSDAFEggS5hBg4UYXblwa1y4cF0inoIhDcQCDIgFlbn9blOF7rnlYwUfpAAUTTnKStnn33vPufcN9VWxhC5sZXUrlQZtGY3LodFa7VjtuFYQ5fJ/B909WUbxp12jOsqErolMQzlm12ltkQ7bkg3w59HqLTasttAvCATY0eMjV1dthXGETRbczM9MzUlYmuxoaZE9rq+xqbJTHqqrk/vz8eQT1IdBji1p9iJn+gUMUD9v1+iegr7+gYJ5syHbRB/kk34ghIZaZYjLTwOiKj9+DwI96UlKkqbo62dfeviK9bW1yX17eLAK4kJ0LzIWCPiNLLgib9UIQz3aRFKMnOVmy63QPKDZzwQfNAjN+6MzK8q3m+G9SNqwajcemVh+3q1QnUFLPSHk5dyyPFMtpNPpIpKxQbGNy/gWlGrNxU2Z4jgLxs8k0j7J+QJCPA0VFC7wxgUgxKZMo+TUmZyksorgfZXGvVtYViQCv09IkIn3mjlmFk4hNS6MjJmYfk+UH7aheo1HiGQZLmlzYE2TsNRgkbLorTJYftO1pLfGMoskRs1nGPnjGZPmB9TM2jaOEZxRNTtfXy1jHo0yWHzgaZumM4hlFk6SBtDBZfmBxTrubm7lG0aQEDbRZmSw/sAbtm2ENjldXU4n7mCw/cP7kOzMyPDyjaHKgsHAOAm8wWX7Y9Pq9OGrctEh5htHii4SEaYtGo2SylgK1v+40GDYsi6OVlVTegRWvu6dK5W6bTje8IWsRt8/LpCRqOrKYHD5w4aswC5+7qYnvaJ04VFq6gH3wJqi2yy6K9a/S0tzh3qmh8vfhLIo+m0p1hkkIDJoFesIO9HM/eQ7XktTFdCcmelG1GhY+OFB3g139nVLPc7xW7MvNnYG4zrupqTtY6OBhVatPIvUStes855FysLh4FuKG6O3DQoYOrAs1nLgnamq4QcIlTooFPLym0IkfY6HCh00QLuIq9E7W1nKDhUo677BjpzD5UyxE5MDz8BIy6Ym0If1WUUE71oWm9DxzvXbAGXnZERsrUWvOC74ah81mOusklDWGuVx7WATBSJkMdU0OlpTM41SYQOZOM1frB2QgGW25RK0RT8xy4ij5gbJ+hcAjzMX6AwtcpHJR2XiiiFJLi/w2PV3Cc6I7rL84IgVdTRA5OWAyzS0XR+v0eVycBx3Snft6/S5mEn04BOEoSvflfU7OzOKDn24fCPNaBeEqG7axoIc2XVd4tHveZWfTXxhDwfzzFVWgl9wJYbfRT96j7pz9vIUt/OdQKH4B6dpwugFVXbMAAAAASUVORK5CYII="><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALISURBVGhD7ZjPi9NAFMcrHkTBkygKHrwoHgTxF3qRlZ0kjfgDxC2bSVq2m5l09eDBv2LRmx5E716EFT0p/hO7qLieRMQfFH/jD1wRur7ZvK4leSxNmkxTyQe+0GbevPed6SSZTqWkpKTk/4U5/inTDU7i19HCrF/YZnDx2uTilT0xvRUvjwZVL9hhuvIxaFkJBrIwVpvajs3FxuKtvYYrXnbNr4rLFwaf2Y1hxcT05DnDlZ9i5rvi8iMsqTMYXhyOTVzeCAZvxAzT6hhcXrPtSxuw+3Ax6/4+MPSUMLqm1H2hlhumGQ6Mi4uwLH5RBvsRDPyH5fk+ptPHWd/fbLpijjKVRnDT3z7dam3C9PnCJuUemPVnlJEBNV+dnNmFZfIBfvIqzPxXonhGEh8MHoxhuWxhPDgPj8jfdOHsBDf3T+YIG8tmg+nIcR3mu1KDMJ3gKJYfjJVtgXoBEYVyVjuTPRS8Oe8TyTVJ3EEb6WBecIROrE0dqz69H+0kB2bgOpFUq9S2A+0kBxIsRhPqltqmoJ3kQOdvVFKdUh7QTnJgCX2nkurUQAOAPcpzKqlmLaKd5MAL5RaRUKvgBXoT7SSHeeIElVSnqp48jnbSAWvwEZVYh2AFPEAb6bE9uRN+xvdUgZz1VtVGG4NhOP5hlTBSYG1x8a77GWZy9XNf4uKN5cpDWD4bcFN3Fwp0YgV7pE4lmBNMwRNs6d81sTTuyqZq640lBLnFXK5nSDCQg2DoKszqQri0xB+c4YcWl546obAcYUaMLTM3MFSb4foNFRv2gb7h8pyHe+0Kc/wDWGa4UHsoMJh+T6OTlTMiLr/EByA+qzYMKy5gthk136MmhhWTWq22Hp4gTwjjoaBNxWB48QCTImY6oqEcZPUDazS2gMF21DChtorFboVhXZL/zvDovKf6hF0LAJiajZrsQ7PYvaSkpGRkqVT+AuXizLVSkdOYAAAAAElFTkSuQmCC"></h1> 
         </header>
         <div class="main">
-        <div id="hang-background" class="gallow">
-            <div class="guess-left">
-                        <p>Guesses Remaining:<span id="current-guesses">6</span></p>
-                           
-                    </div>
-                   
-
-
-        </div>
-        <div class="container">
-            <!-- <div class="main"> -->
-                
-                <h2 id="instructions">The King has caught the Queen sleeping with Sir Jack-of-Hearts! Now you must prove your poker knowledge to save Jack before they Hang Jack!</h2>
-                
+            <div id="hang-background" class="gallow">
+                <div class="guess-left">
+                    <p>Guesses Remaining<br><span id="current-guesses">6</span></p>      
+                </div>
+            </div>
+            <div class="container">
+                <h2 id="instructions">The King has caught the Queen sleeping with Sir Jack-of-Hearts! Now you must prove your poker knowledge to save Jack before they hang Jack!</h2>
                 <div class="scoreboard">
-                        <div class="badge">Wins</div>
-                        <span id="winstotal">0</span>
-                        <div class="badge">Losses</div>
-                        <span id="losstotal">0</span>
-                    </div>
-
-                    
-
-                    
-                    
+                    <div class="badge">Wins</div>
+                    <span id="winstotal">0</span>
+                    <div class="badge">Losses</div>
+                    <span id="losstotal">0</span>
+                </div>
                     <div id="blankword"></div>
-
-                    <div class="sofar">
-                        
-                        <div id="pokertable">
-                            
-                            <p>Letters Guessed so far:</p>
+                    <div id="pokertable">
+                        <div class="sofar">
+                            <p>Letters Guessed so far</p>
                             <span id="past-guesses"></span>
                         </div>
                     </div>
-            <!-- </div> -->
+                </div>
         </div>
-    </div>
         <script src="assets/javascript/game.js" charset="UTF-8"></script>
         <footer>&copy; 2018 RICH SCHIFFER</footer>
     </body>
