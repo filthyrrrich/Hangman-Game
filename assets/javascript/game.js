@@ -59,9 +59,11 @@ function convertWord(){
 convertWord();
 
 // begins game when letters are clicked
-document.onkeyup = function(event) {
+// document.getElementById("keyboard").onclick = function(event)
+document.getElementById("keyboard").onclick = function(event) {
+    console.log(event.target.id)
     
-    var guess = event.key.toLowerCase();
+    var guess = event.target.id.toLowerCase();
     var repeatGuess = userGuess.includes("<div id='card'>" + guess + "</div>") || answerArray.includes(guess);
     
     // prevents non-letter keys from being clicked
@@ -112,8 +114,15 @@ document.onkeyup = function(event) {
         }
     }
 
-
-
-
-
+    // var click = document.getElementById("x");
+    // click.addEventListener("click", function() {
+    // /*
+    // KeyboardEvent constructor
+    // http://www.w3.org/TR/DOM-Level-3-Events/#idl-interface-KeyboardEvent-initializers
+    // https://github.com/termi/DOM-Keyboard-Event-Level-3-polyfill
+    // */
+    // var keyEvent = new KeyboardEvent("keydown", {key : "a", char : "a", keyCode: "KeyA",shiftKey: true});
+    
+    // document.dispatchEvent(keyEvent);
+// });
 
